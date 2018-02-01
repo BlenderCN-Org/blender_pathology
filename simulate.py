@@ -156,7 +156,7 @@ def simulate( infile='', parts=1, outdir='./outdir', runs='10', frames='250', mo
     if verbose:
         print( 'adding %d meshes to simulation' % len( objects ) )
 
-    set_physics_parameters( solver_iterations=1000, steps_per_second=60, time_scale=1.0, use_split_impulse=False, gravity=Vector( ( 0, 0, -9.81 ) ) )
+    set_physics_parameters( solver_iterations=10, steps_per_second=60, time_scale=1.0, use_split_impulse=False, gravity=Vector( ( 0, 0, -9.81 ) ) )
 
     # add the meshes to the blender scene
     count = 0
